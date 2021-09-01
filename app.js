@@ -20,47 +20,8 @@ let lostRobots = 0;
 
 let userInput = function () {
     rl.question('', function (coordinates) {
-        // if (coordinates === ''){
-        //     rl.close();
-        //     console.log(output);
-        //     process.exit(0);
-        // }
-        // robot.x = parseInt(coordinates.split(' ')[0]);
-        // robot.y = parseInt(coordinates.split(' ')[1]);
-        // switch (coordinates.split(' ')[2]) {
-        //     case 'N':
-        //         robot.orientation = 90;
-        //         break;
-        //     case 'S':
-        //         robot.orientation = 270;
-        //         break;
-        //     case 'W':
-        //         robot.orientation = 180;
-        //         break;
-        //     case 'E':
-        //         robot.orientation = 0;
-        //         break;
-        // }
         rl.question('', function (instruction) {
             run(coordinates, instruction, robot);
-            // instructions = [];
-            // for (let i = 0; i < instruction.length; i++){
-            //     instructions.push(instruction.charAt(i));
-            // }
-            //
-            // let result;
-            // for (let i = 0; i < instructions.length; i++){
-            //     result = moveRobot(instructions[i], robot, MAX_X, MAX_Y);
-            //     robot = result.robot;
-            //     if (result.lost){
-            //         break;
-            //     }
-            // }
-            // if (result.lost){
-            //     output = output.concat(result.robot.x + ' ' + result.robot.y + ' ' + parseOrientation(result.robot.orientation) + ' LOST\n');
-            // } else {
-            //     output = output.concat(result.robot.x + ' ' + result.robot.y + ' ' + parseOrientation(result.robot.orientation) + '\n');
-            // }
             userInput();
         });
     });
