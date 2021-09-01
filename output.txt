@@ -1,0 +1,8 @@
+Martian Robots
+-------------------------------
+Size of Mars: 5 3
+Initial coordinates and orientation: undefined undefined undefined
+Instructions: 
+
+Output: 
+Number of lost robots: 0
